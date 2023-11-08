@@ -29,7 +29,7 @@ public class DiasSemana {
 			} else if (mes == 11) {
 				System.out.print("Noviembre" + " ");
 			} else if (mes == 12) {
-				System.out.print("Dicembre" + " ");
+				System.out.print("Diciembre" + " ");
 			}
 			semana = 0;
 			while (semana <= 3) {
