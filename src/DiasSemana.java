@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class DiasSemana {
 	public static void main(String[] args) {
@@ -5,16 +6,25 @@ public class DiasSemana {
 		int dayOfWeek;
 		int semana;
 		int mes = 1;
-		while (mes <= 12) {
+		int totalDias;
+		int mescompleto=0;
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Introduce un numero entre 1 y 336:");
+		totalDias = teclado.nextInt();
+		
+		mescompleto= (totalDias/28-1);
+		
+		
+		while (mes <= mescompleto) {
 			if (mes == 1) {
 				System.out.print("Enero" + " ");
 			} else if (mes == 2) {
 				System.out.print("Febrero" + " ");
 			} else if (mes == 3) {
-				System.out.print("Marzo" + " ");
+				System.out.print("Marzo" + " ");  
 			} else if (mes == 4) {
 				System.out.print("Abril" + " ");
-			} else if (mes == 5) {
+			} else if (mes == 5) { 
 				System.out.print("Mayo" + " ");
 			} else if (mes == 6) {
 				System.out.print("Junio" + " ");
@@ -58,5 +68,6 @@ public class DiasSemana {
 			mes = mes + 1;
 			System.out.println(" ");
 		}
+		teclado.close();
 	}
 }
