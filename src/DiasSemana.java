@@ -8,11 +8,13 @@ public class DiasSemana {
 		int mes = 1;
 		int totalDias;
 		int mescompleto=0;
+		int dias;
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Introduce un numero entre 1 y 336:");
 		totalDias = teclado.nextInt();
 		
-		mescompleto= (totalDias/28-1);
+		mescompleto= (totalDias/28);
+		dias = ((mescompleto*28)-(totalDias));
 		
 		
 		while (mes <= mescompleto) {
