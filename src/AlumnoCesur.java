@@ -64,7 +64,10 @@ public class AlumnoCesur {
 
 			}
 		}
+		juanantonio = null;
+		System.out.println(juanantonio);
 	}
+	
 
 }
 
