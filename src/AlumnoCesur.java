@@ -156,4 +156,11 @@ class Clase {
 			numAlumnos++;
 		}
 	}
+	
+	public void delete(String nombreAlumno) {
+		for (int i = 0; i < numAlumnos; i++) {
+			if (alumnos[i].getNombre() == nombreAlumno);
+			
+		}
+	}
 }
